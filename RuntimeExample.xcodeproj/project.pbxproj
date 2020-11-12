@@ -16,6 +16,9 @@
 		DA51CE3925591C9900F05D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51CE3825591C9900F05D0A /* main.m */; };
 		DA51CE4425591CE000F05D0A /* RuntimeStart.m in Sources */ = {isa = PBXBuildFile; fileRef = DA51CE4325591CE000F05D0A /* RuntimeStart.m */; };
 		DA71DAEB255A293900AA8989 /* ResolveModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71DAEA255A293900AA8989 /* ResolveModel.m */; };
+		DA71DAF0255A657D00AA8989 /* BWHotFix.m in Sources */ = {isa = PBXBuildFile; fileRef = DA71DAEF255A657D00AA8989 /* BWHotFix.m */; };
+		DA71DAF4255A65AA00AA8989 /* BWHotFix.js in Resources */ = {isa = PBXBuildFile; fileRef = DA71DAF3255A65AA00AA8989 /* BWHotFix.js */; };
+		DA71DAF9255A71A400AA8989 /* test.js in Resources */ = {isa = PBXBuildFile; fileRef = DA71DAF8255A71A400AA8989 /* test.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +36,13 @@
 		DA51CE3825591C9900F05D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA51CE4225591CE000F05D0A /* RuntimeStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeStart.h; sourceTree = "<group>"; };
 		DA51CE4325591CE000F05D0A /* RuntimeStart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeStart.m; sourceTree = "<group>"; };
+		DA5922F4255B7D2300F0EE95 /* RuntimeExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RuntimeExample.entitlements; sourceTree = "<group>"; };
 		DA71DAE9255A293900AA8989 /* ResolveModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResolveModel.h; sourceTree = "<group>"; };
 		DA71DAEA255A293900AA8989 /* ResolveModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResolveModel.m; sourceTree = "<group>"; };
+		DA71DAEE255A657D00AA8989 /* BWHotFix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BWHotFix.h; sourceTree = "<group>"; };
+		DA71DAEF255A657D00AA8989 /* BWHotFix.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BWHotFix.m; sourceTree = "<group>"; };
+		DA71DAF3255A65AA00AA8989 /* BWHotFix.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = BWHotFix.js; sourceTree = "<group>"; };
+		DA71DAF8255A71A400AA8989 /* test.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = test.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +75,9 @@
 		DA51CE2525591C9700F05D0A /* RuntimeExample */ = {
 			isa = PBXGroup;
 			children = (
+				DA5922F4255B7D2300F0EE95 /* RuntimeExample.entitlements */,
+				DA71DAF7255A719600AA8989 /* file */,
+				DA71DAED255A656300AA8989 /* BWHotFix */,
 				DA51CE4125591CB700F05D0A /* Classs */,
 				DA51CE2625591C9700F05D0A /* AppDelegate.h */,
 				DA51CE2725591C9700F05D0A /* AppDelegate.m */,
@@ -92,6 +103,24 @@
 				DA71DAEA255A293900AA8989 /* ResolveModel.m */,
 			);
 			path = Classs;
+			sourceTree = "<group>";
+		};
+		DA71DAED255A656300AA8989 /* BWHotFix */ = {
+			isa = PBXGroup;
+			children = (
+				DA71DAEE255A657D00AA8989 /* BWHotFix.h */,
+				DA71DAEF255A657D00AA8989 /* BWHotFix.m */,
+				DA71DAF3255A65AA00AA8989 /* BWHotFix.js */,
+			);
+			path = BWHotFix;
+			sourceTree = "<group>";
+		};
+		DA71DAF7255A719600AA8989 /* file */ = {
+			isa = PBXGroup;
+			children = (
+				DA71DAF8255A71A400AA8989 /* test.js */,
+			);
+			path = file;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA51CE3625591C9900F05D0A /* LaunchScreen.storyboard in Resources */,
+				DA71DAF4255A65AA00AA8989 /* BWHotFix.js in Resources */,
 				DA51CE3325591C9900F05D0A /* Assets.xcassets in Resources */,
 				DA51CE3125591C9700F05D0A /* Main.storyboard in Resources */,
+				DA71DAF9255A71A400AA8989 /* test.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +196,7 @@
 			files = (
 				DA51CE4425591CE000F05D0A /* RuntimeStart.m in Sources */,
 				DA51CE2E25591C9700F05D0A /* ViewController.m in Sources */,
+				DA71DAF0255A657D00AA8989 /* BWHotFix.m in Sources */,
 				DA51CE2825591C9700F05D0A /* AppDelegate.m in Sources */,
 				DA51CE3925591C9900F05D0A /* main.m in Sources */,
 				DA71DAEB255A293900AA8989 /* ResolveModel.m in Sources */,
@@ -311,6 +343,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RuntimeExample/RuntimeExample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RuntimeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,6 +353,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bw.cn.RuntimeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -328,6 +363,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RuntimeExample/RuntimeExample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RuntimeExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,6 +373,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bw.cn.RuntimeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

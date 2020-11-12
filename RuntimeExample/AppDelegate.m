@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "RuntimeStart.h"
+#import "BWHotFix.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [RuntimeStart fire];
+//    [RuntimeStart fire];
+    
+    [BWHotFix fire];
+    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"test" ofType:@"js"];
+    [BWHotFix loadFile:sourcePath];
     return YES;
 }
 
